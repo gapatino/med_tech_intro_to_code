@@ -1,14 +1,14 @@
 # MedTech: Intro to Code
 Intro to Code session for the MedTech interest group 2016  
   
-** Objective: ** Introduce students without prior experience in programming to basic concepts  
+__Objective:__ Introduce students without prior experience in programming to basic concepts  
 like functions and conditionals using HTML and JavaScript.  
   
 Repository consists of:  
 - HTML file for a simple Fahrenheit to Celsius calculator. CSS and JavaScript code are included within the HTML file to facilitate the teaching objective. Some portions of the code can be optimized (e.g. using a form or a table) as an exercise by the students  
 - This readme file  
 
-** Installation instructions: **  
+__Installation instructions:__  
 1. Download this repository  
 2. Unzip the downloaded file if not done automatically by your system  
 3. Copy the unzipped folder to a place in your computer where it can be located easily  
