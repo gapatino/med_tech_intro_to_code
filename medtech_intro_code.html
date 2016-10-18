@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title> Intro to Code </title>
+    <style>
+      html {
+        background-color: WhiteSmoke;
+      }
+      h1, footer {
+        text-align: center;
+      }
+      #intro {
+        font-size: 16px;
+        line-height: 2;
+        text-align: center;
+      }
+      div {
+        width: 500px;
+        border: 3px solid black;
+        padding: 10px;
+        margin: auto;
+      }
+      label {
+        color: DarkSlateGray;
+      }
+      footer {
+        line-height: 10;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1> TEMPERATURE CONVERTER </h1>
+    <p id="intro"> This script reports the <b>Fahreheit</b> equivalent of a temperature in <b>Celsius</b> </p>
+    <div>
+      <label for="input_t"> Temperature in Fahrenheit: </label>
+      <input id="input_t" type="text" autofocus/>
+      <button type="button" onclick="FToC()"> Send </button>
+    </br>
+      <label for="output_t"> Temperature in Celsius:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+      <input id="output_t" type="text" />
+    </div>
+    <footer> <i> MedTech: Intro to Code 2016</i> </footer>
+    <script>
+      function FToC() {
+        var fahrenheit_t = parseFloat(document.getElementById("input_t").value);
+        var celsius_t = (fahrenheit_t - 32) * (5/9);
+        if (isNaN(celsius_t)) {
+          alert('Input must be numbers\nPlease reenter the temperature value');
+          return false;
+        } else {
+          document.getElementById("output_t").value = celsius_t;
+          return false;
+        }
+      }
+    </script>
+  <body>
+</html>
